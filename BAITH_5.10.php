@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>
-		<?php echo "TEST php";  ?>
+		<?php echo "THỰC HÀNH PHP 5.10";  ?>
 	</title>
 </head>
 <SCRIPT LANGUAGE="JavaScript">
