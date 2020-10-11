@@ -11,6 +11,7 @@
 <body>
 	<h2>KẾT QUẢ CỦA PHÉP TÍNH 5+6=</h2>
 			<?php $a = 5;$b = 6;echo $a+$b; ?>
+	<p></p>
 	a = <input type="text" name="a" id = "a">
 	b = <input type="text" name="b" id = "b">
 	<button onclick="tong(a,b)">TINH TONG</button>
