@@ -57,7 +57,7 @@ disconnect_db();
     <body>
         <h1>SỬA THÔNG TIN SINH VIÊN</h1>
         <a href="main.php">TRỞ VỀ DANH SÁCH</a> <br/> <br/>
-        <form method="post" action="student_edit.php?masv=<?php echo $data['masv']; ?>">
+        <form method="post" name = "edit_student" action="student_edit.php?masv=<?php echo $data['masv']; ?>">
         <table class="table table-striped table-inverse table-responsive">
                 <tr>
                     <th>Họ tên</td>
