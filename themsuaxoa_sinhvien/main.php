@@ -20,11 +20,12 @@ disconnect_db();
     }
 </style>
 <body>
-    <h1>THÊM/SỬA/XOÁ/TÌM KIẾM SINH VIÊN - NGÔ TRUNG KIÊN - 74458</h1>
+    <h2>THÊM/SỬA/XOÁ/TÌM KIẾM SINH VIÊN - NGÔ TRUNG KIÊN - 74458</h2>
     <hr>
     <a href="student_add.php"><button>THÊM SINH VIÊN</button></a>
+    <a href="student_search.php"><button>TÌM KIẾM</button></a>
     <hr>
-    <h3>TÌM KIẾM <input type="text" name = "timkiem" value = ""></h3>
+
     <h2>DANH SÁCH SINH VIÊN</h2>
     <br>
     <table class="table table-striped table-inverse table-responsive">

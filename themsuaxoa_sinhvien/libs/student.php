@@ -42,20 +42,22 @@ function get_student_masv($masv){
     $result = array();
     if(mysqli_num_rows($query)>0){
         $row = mysqli_fetch_assoc($query);
-        $result = $row;
+        $result[] = $row;
     }
     return $result;
 }
-//Lay sinh vien theo ten
-function get_student_name($hoten){
+//Tim sinh vien theo ten va masv
+function search_student($masv,$hoten){
     global $con;
     connect_db();
-    $sql = "select * from diem where hoten = {$hoten}";
+    $hoten = addslashes($masv);
+    $sql = "select * from diem where masv like '%$masv%' OR hoten like '%$hoten%'";
     $query = mysqli_query($con,$sql);
     $result = array();
-    if(mysqli_num_rows($query)>0){
-        $row = mysqli_fetch_assoc($query);
-        $result = $row;
+    if($query){
+        while($row = mysqli_fetch_assoc($query)){
+            $result[] = $row; 
+        }
     }
     return $result;
 }
@@ -88,7 +90,7 @@ function edit_student($masv,$hoten,$diembtl){
     return $query;
 
 }
-
+//Xoa sinh vien
 function delete_student($masv){
     global $con;
     connect_db();
