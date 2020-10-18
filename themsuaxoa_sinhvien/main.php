@@ -14,11 +14,17 @@ disconnect_db();
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
+<style>
+    h3{
+        text-align: right;
+    }
+</style>
 <body>
     <h1>THÊM/SỬA/XOÁ/TÌM KIẾM SINH VIÊN - NGÔ TRUNG KIÊN - 74458</h1>
     <hr>
     <a href="student_add.php"><button>THÊM SINH VIÊN</button></a>
     <hr>
+    <h3>TÌM KIẾM <input type="text" name = "timkiem" value = ""></h3>
     <h2>DANH SÁCH SINH VIÊN</h2>
     <br>
     <table class="table table-striped table-inverse table-responsive">
