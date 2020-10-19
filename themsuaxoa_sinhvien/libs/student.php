@@ -42,7 +42,7 @@ function get_student_masv($masv){
     $result = array();
     if(mysqli_num_rows($query)>0){
         $row = mysqli_fetch_assoc($query);
-        $result[] = $row;
+        $result = $row;
     }
     return $result;
 }

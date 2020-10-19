@@ -44,7 +44,6 @@ disconnect_db();
                     <th></td>
                     <td>
                         NHẬP MÃ SV HOẶC TÊN SV: <input type="text" name="masv" value="<?php echo !empty($data['masv']) ? $data['masv'] : ''; ?>"/>
-                        <?php if (!empty($errors['masv'])) echo $errors['masv']; ?>
                     </td>
                 </tr>
                 <tr>
